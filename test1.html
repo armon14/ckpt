@@ -68,6 +68,7 @@
     border: 1px solid #000;
     background: #398E1D;
     text-align: center;
+    color: white;
     /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9); */
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
@@ -120,6 +121,54 @@
 .panel.flip .back {
     z-index: 1000;
     background: #80868d;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.blue.panel.flip .back {
+    z-index: 1000;
+    background: #00aeef;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.yellow.panel.flip .back {
+    z-index: 1000;
+    background: #FFFF00;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.red.panel.flip .back {
+    z-index: 1000;
+    background: #c33a32;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.orange.panel.flip .back {
+    z-index: 1000;
+    background: #ffc222;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.purple.panel.flip .back {
+    z-index: 1000;
+    background: #9932CC;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+/*    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+}
+.green.panel.flip .back {
+    z-index: 1000;
+    background: #8dc63f;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
     transform: rotateX(0deg) rotateY(0deg);
@@ -226,7 +275,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: xx-large;
 	font-weight: bold;
-	background-color: #aaaaaa;
+	background-color: #F8F8FF;
 	text-align: left;
 	width: 768px;
 	height: 90px;
@@ -282,69 +331,130 @@ h2 {
     margin: 4px 1px 0 0;
     
 }
+a:focus {
+	outline: none;
+}
+#panel {
+	background: #754c24;
+	height: 200px;
+	display: none;
+}
+.slide {
+	margin: 0;
+	padding: 0;
+	border-top: solid 4px #422410;
+	background: url(images/btn-slide.gif) no-repeat center top;
+}
+.btn-slide {
+	background: url(images/white-arrow.gif) no-repeat right -50px;
+	text-align: center;
+	width: 144px;
+	height: 31px;
+	padding: 10px 10px 0 0;
+	margin: 0 auto;
+	display: block;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+.active {
+	background-position: right 12px;
+}
 
 </style>
 </head>
 
 <body>
     <div id="mainContent">
-        <div id="MainHeader"></div>
         <div id="Header"></div>
         <div id="SubHeaderTop"></div>
         <div id="SubHeader"></div>
         <div id="SubHeaderBottom"></div>
         <div id="Content">
-            <div class="click panel">
+            <div class="click panel yellow">
                 <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
                     <h2>&#x2713;</h2>
                 </div>
+                <div class="back">
+                    <h2>2</h2>
+                </div>
             </div>
-            <p>DGM 1010</p>
-            <a class="sub">Introduction to Multimedia</a>
+            <p>ENGL 2020</p>
+            <a class="sub">Intermediate Writing Sci/Tech CC</a>
         </div>
         <div id="Content">
-            <div class="click panel circle">
+            <div class="click panel purple">
                 <div class="front">
-                    <h2>U</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
+                    <h2>5</h2>
+                </div>
+            </div>
+            <p>MAT 1010</p>
+            <a class="sub">Intermediate Algebra</a>
+        </div>
+        <div id="Content" class="">
+            <div class="click panel blue">
+                <div class="front">
+                    <h2>&#x2713;</h2>
+                </div>
+                <div class="back">
+                    <h2>1</h2>
+                </div>
+            </div>
+            <p>DGM 1110</p>
+            <a class="sub">Multimedia Essentials</a>
+        </div>
+        <div id="Content">
+            <div class="click panel circle orange">
+                <div class="front">
                     <h2>X</h2>
                 </div>
+                <div class="back">
+                    <h2>4</h2>
+                </div>
             </div>
-            <p>DGM 1050</p>
-            <a class="sub">College Algrebra</a>
+            <p>MATH 1050</p>
+            <a class="sub">College Algebra</a>
         </div>
         <div id="Content">
-            <div class="click panel">
+            <div class="click panel green">
                 <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
                     <h2>&#x2713;</h2>
                 </div>
+                <div class="back">
+                    <h2>3</h2>
+                </div>
             </div>
-            <p>DGM 1010</p>
-            <a class="sub">Introduction to Multimedia</a>
+            <a>DGM 1050</a>
         </div>
         <div id="Content">
-            <div class="click panel">
+            <div class="click panel green">
                 <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
                     <h2>&#x2713;</h2>
                 </div>
+                <div class="back">
+                    <h2>3</h2>
+                </div>
             </div>
-            <p>DGM 1010</p>
-            <a class="sub">Introduction to Multimedia</a>
+            <a>DGM 1050</a>
+        </div>
+        <div id="Content">
+            <div class="click panel red">
+                <div class="front">
+                    <h2>&#x2713;</h2>
+                </div>
+                <div class="back">
+                    <h2>6</h2>
+                </div>
+            </div>
+            <a>DGM 1050</a>
         </div>
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -355,7 +465,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -366,7 +476,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -377,7 +487,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -388,7 +498,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -399,7 +509,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
+                    <h2>&#x2713;</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -410,40 +520,7 @@ h2 {
         <div id="Content">
             <div class="click panel">
                 <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
                     <h2>&#x2713;</h2>
-                </div>
-            </div>
-            <a>DGM 1050</a>
-        </div>
-        <div id="Content">
-            <div class="click panel">
-                <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
-                    <h2>&#x2713;</h2>
-                </div>
-            </div>
-            <a>DGM 1050</a>
-        </div>
-        <div id="Content">
-            <div class="click panel">
-                <div class="front">
-                    <h2>A</h2>
-                </div>
-                <div class="back">
-                    <h2>&#x2713;</h2>
-                </div>
-            </div>
-            <a>DGM 1050</a>
-        </div>
-        <div id="Content">
-            <div class="click panel">
-                <div class="front">
-                    <h2>A</h2>
                 </div>
                 <div class="back">
                     <h2>&#x2713;</h2>
@@ -497,7 +574,11 @@ $(document).ready(function(){
 			$('.contact').removeClass('flip');
 			e.preventDefault();
 		});
-
+        $(".btn-slide").click(function() {
+            $("#panel").slideToggle("slow");
+            $(this).toggleClass("active");
+            return false;
+        });
 	});
 
 </script>
