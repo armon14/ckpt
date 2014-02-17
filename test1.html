@@ -5,8 +5,15 @@
 <head>
 <meta charset="utf-8">
 <title>Hello...</title>
+
 <script src="/js/modernizr.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.1.min.css">
+	<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+	<script src="demos/_assets/js/index.js"></script>
+	<script src="jquery.mobile-1.4.1.min.js"></script>
 
 <style type="text/css">
 
@@ -320,6 +327,26 @@ p {
     font-weight: bold;
     font-style: italic;
 }
+p.Test {
+    margin:0 0 0 0;
+    padding-top:0px;
+    padding-left:0px;
+    padding-bottom:5px;
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    color: yellow;
+}
+p.none {
+    margin:0 0 0 0;
+    padding-top:0px;
+    padding-left:0px;
+    padding-bottom:2px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
 .sub {
     margin:0 0 0 20px;
     font-size: 16pt;
@@ -362,6 +389,7 @@ a:focus {
 }
 
 </style>
+
 </head>
 
 <body>
@@ -376,7 +404,47 @@ a:focus {
                 </div>
             </div>
             <p>ENGL 2020</p>
-            <a class="sub">Intermediate Writing Sci/Tech CC</a>
+            <a class="sub" href="#nav-panel" data-icon="bars" data-iconpos="notext">Intermediate Writing Sci/Tech CC</a>
+            <div class="ui-panel-inner" data-position="right"data-role="panel" data-position-fixed="true"
+            data-display="overlay" data-theme="b" id="nav-panel">
+                <p class="Test">ENGL 2020</p>
+                
+                <p class="none">Intermediate Writing -- Science and Technology</p>
+                <br>
+                <ul data-role="listview">
+                    <li data-icon="delete">
+                        <a href="#" data-rel="close">Close menu</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Accordion</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Ajax Navigation</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Autocomplete</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Checkboxes</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Collapsibles</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Controlgroup</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Dialogs</a>
+                    </li>
+                    <li>
+                        <a href="#panel-fixed-page2">Fixed toolbars</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /panel -->
         </div>
         <div id="Content">
             <div class="click panel purple">

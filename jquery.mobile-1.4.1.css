@@ -4497,8 +4497,17 @@ textarea.ui-input-text.ui-textinput-autogrow {
 .ui-panel-display-overlay {
 	z-index: 1001; /* Fixed toolbars have z-index 1000 */
 }
+.ui-panel.ui-panel-open {
+        position:fixed;
+}
 .ui-panel-inner {
-	padding: 1em;
+	position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 /* Container, page and wrapper */
 .ui-panel-page-container {
